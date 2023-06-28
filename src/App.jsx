@@ -8,6 +8,8 @@ function App() {
 
   const [phraseIndex, setPhraseIndex] = useState(Math.floor(Math.random() * phrases.length));
 
+  const fondo = ['fondo1','fondo2', 'fondo3', 'fondo4']
+  const [indexfondo, setIndexFondo] = useState(0)
 
   const handleClick = () => {
     const newIndex = Math.floor(Math.random() * phrases.length);
@@ -16,8 +18,6 @@ function App() {
     setIndexFondo(newFondo);
   };
 
-  const fondo = ['fondo1','fondo2', 'fondo3', 'fondo4']
-  const [indexfondo, setIndexFondo] = useState(0)
  
 
   
