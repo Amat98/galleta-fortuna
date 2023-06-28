@@ -22,12 +22,12 @@ function App() {
 
   
 
-  document.body.style = `background-image: url(./src/img/${fondo[indexfondo]}.jpg);`
+  document.body.style = `background-image: url( /src/img/${fondo[indexfondo]}.jpg);`;
 
   return (
     <>
       <section className='container'>
-        <h1 className='container-h1'>Galleta De La Fortuna</h1>
+        <h1 className='container-h1'>-Galleta De La Fortuna-</h1>
         <Phrase
         data={phrases[phraseIndex]} 
         />
