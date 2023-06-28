@@ -4,6 +4,7 @@ import './App.css'
 import Author from './components/Author';
 import { useState } from 'react';
 
+
 function App() {
 
   const [phraseIndex, setPhraseIndex] = useState(Math.floor(Math.random() * phrases.length));
@@ -22,8 +23,8 @@ function App() {
 
   
 
-  document.body.style = `background-image: url( /src/img/${fondo[indexfondo]}.jpg);`;
-
+  // document.body.style = `background-image: url( ./src/img/${fondo[indexfondo]}.jpg)`;
+  document.body.style = `background-image: url('/img/${fondo[indexfondo]}.jpg')`;
   return (
     <>
       <section className='container'>
